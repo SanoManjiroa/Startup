@@ -8,6 +8,14 @@
 <body>
 {% block body %}
 <h1>Assalamu alaikum</h1>
+
+{% for w in writers %}
+
+<h3> <li> {{ w.fullname }} </li> </h3>
+    <p>{{ w.about }}</p>
+{% endfor %}
+
+
 {% endblock %}
 </body>
 </html>
