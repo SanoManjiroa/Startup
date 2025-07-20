@@ -1,11 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock %} </title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
-{% block body %}
-{% endblock %}
+<!--Header section -->
+<header class="main_header">
+        <div class="main-header-brand">
+              <img src="{% static 'images/iroda.png' %}" alt="Logo">
+        </div>
+    <nav class="main-nav">
+        <ul class="main-navigation-items">
+            <li class="main-navigation-item">
+                <a href="#">Asosiy</a>
+            </li>
+            <li class="main-navigation-item">
+                <a href="#">Biz haqimizda</a>
+
+            </li>
+            <li class="main-navigation-item">
+                <a href="#">Xizmatlarimiz</a>
+            </li>
+            <li class="main-navigation-item">
+                 <a href="#">Mijozlarimiz</a>
+            </li>
+             <li class="main-navigation-item">
+                 <a href="#">Portfolio</a>
+            </li>
+             <li class="main-navigation-item">
+                <a href="#">Blog</a>
+            </li>
+             <li class="main-navigation-item">
+                <a href="#">Hamkorlarimiz</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!--/Header section -->
+
+<!--Main section -->
+<section id="main-section">
+    <h1>
+        Asosiy
+    </h1>
+</section>
+<!--/Main section -->
+
+<!--About us section -->
+<section id="about-section">
+    <h1>
+        Biz haqimizda
+    </h1>
+</section>
+<!--/About us  section -->
+
+<!--Service section -->
+<section id="service-section">
+    <h1>
+        Xizmatlarimiz
+    </h1>
+</section>
+<!--/Service section -->
+
+<!--Customers section -->
+<section id="customers-section">
+    <h1>
+        Mijozlarimiz
+    </h1>
+</section>
+<!--/Customers section -->
+
+<!--Portfolio section -->
+<section id="portfolio-section">
+    <h1>
+        Portfolio
+    </h1>
+</section>
+<!--/Portfolio section -->
+
+<!--Portfolio section -->
+<section id="blog-section">
+    <h1>
+        Blog
+    </h1>
+</section>
+<!--/Blog section -->
+
+<!--Partners section -->
+<section id="partners-section">
+    <h1>
+        Hamkorlarimiz
+    </h1>
+</section>
+<!--/Partners section -->
+
+{% block body %}{% endblock %}
+
+
+<!-- Just a box -->
+
+<div class="first-box">
+    <h1>First box</h1>
+</div>
+
+<div class="second-box">
+    <h1>Second box</h1>
+</div>
+<!-- /Just a box -->
+
+
+<--Footer section -->
+<footer>
+        <nav>
+        <ul>
+            <li>
+                <a href="#">Asosiy</a>
+            </li>
+            <li>
+                <a href="#">Biz haqimizda</a>
+
+            </li>
+            <li>
+                <a href="#">Xizmatlarimiz</a>
+            </li>
+            <li>
+                 <a href="#">Mijozlarimiz</a>
+            </li>
+            <li>
+                 <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Hamkorlarimiz</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+<!-- /Footer section -->
 </body>
 </html>
